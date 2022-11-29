@@ -47,12 +47,12 @@
 
     .root-xiaomi-smart-pet-fountain {overflow: hidden; width: 100%;}
 
-    .main-title_xiaomi-smart-pet-fountain-01 {font-size: 1.8rem; color: var(--title); text-align: center; padding: 2rem 1rem 0rem 1rem;}
-    .main-title_xiaomi-smart-pet-fountain-02 {font-size: 1.8rem; color: var(--title-white); text-align: center; padding: 1rem;}
+    .main-title_xiaomi-smart-pet-fountain-01 {font-size: 1.8rem; color: var(--title); text-align: center; padding: 2rem 1rem 0.5rem 1rem;}
+    .main-title_xiaomi-smart-pet-fountain-02 {font-size: 1.5rem; color: var(--title); text-align: center; padding: 0.5rem 1rem 0.5rem 1rem;}
     
     .sub-title_xiaomi-smart-pet-fountain-01 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; padding: 1rem;}
     .sub-title_xiaomi-smart-pet-fountain-01-01 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; padding: 0rem 1rem 0rem 1rem;}
-    .sub-title_xiaomi-smart-pet-fountain-01-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; padding: 1rem;}
+    .sub-title_xiaomi-smart-pet-fountain-01-02 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: left; padding: 1rem 2rem 1rem 2rem;}
     .sub-title_xiaomi-smart-pet-fountain-02 {font-size: 1rem; color: var(--title); text-align: center; padding: 0.5rem;}
     .sub-title_xiaomi-smart-pet-fountain-03 {font-size: 1rem; color: var(--title-white); line-height: 1.5rem; text-align: center; padding: 1rem;}
    
@@ -65,11 +65,15 @@
 
     .sub-title_xiaomi-smart-pet-fountain-08 {font-size: 1rem; color: var(--title); text-align: center; padding: 1rem;}
 
+    .sub-title_xiaomi-smart-pet-fountain-grid-01 {font-size: 1rem; color: var(--title); text-align: center; padding: 0.5rem;}
+
+
     .title_xiaomi-smart-pet-fountain-01 {font-size: 2rem; color: var(--title); text-align: center; margin: 1rem 1rem 0rem 1rem;}
     .sub-title_xiaomi-smart-pet-fountain-02-01 {font-size: 1rem; color: var(--title); line-height: 1.5rem; text-align: center; margin: 1rem 1rem 0rem 1rem;}
     .text_xiaomi-smart-pet-fountain-01 {font-size: 1rem; color: var(--tittle-gray); line-height: 1.5rem; text-align: center; margin: 1rem 1rem 0rem 1rem;}
 
     .notes_xiaomi-smart-pet-fountain {font-size: 0.8rem; line-height: 1.6rem; color: var(--tittle-gray); text-align: left; padding: 0rem 1rem 1rem 1rem;} 
+    .notes_xiaomi-smart-pet-fountain-01 {font-size: 0.8rem; color: var(--tittle-gray); text-align: center; padding: 0.5rem 2rem 1rem 13rem;} 
 
     /*==================================================== GRID ========================================================*/
 
@@ -78,6 +82,13 @@
     }
 
     .grid_icons-01 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .grid_icons-02 {
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
@@ -104,10 +115,63 @@
         margin: 1rem;
     }
 
+    .bg_img-center {
+        display: grid;
+        justify-items: center;
+    }
+     
     .bg_img-center-01 {
         margin: 1rem;
     }
 
+    .bg_img-center-02 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .grid_icons-03 {
+        display: flex;
+        align-items: center;
+        margin: 26rem 0rem 1rem 0rem;
+        max-width: 25rem;
+    }
+
+    .grid_bg-02 {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-auto-columns: 1fr 1fr;
+        margin: 2rem;
+    }
+
+    .grid_bg-03 {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-auto-columns: 1fr 1fr;
+        margin: 2rem;
+    }
+
+    .grid_bg-02-text {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid_img-icons {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        background-color: #F6F6F6;
+        justify-content: center;
+    }
+
+    .grid_img-icons-01 {
+        display: grid;
+        align-content: center;
+        margin: 1rem;
+    }
 
     /*======================================================= LAYOUT =======================================================*/
 
@@ -115,124 +179,117 @@
         padding: 2rem 1rem 2rem 1rem;
     }
 
+    .bg_01-01 {
+        padding: 2rem 1rem 2rem 1rem;
+        background-color: #DADADA;
+        width: 100%;
+    }
+
+    .bg_01-text {
+
+    }
+
+    .bg_01-gray {
+        background-color: #F0F0F0;
+    }
+
+    .bg_02-gray {
+        background-color: #F6F6F6;
+        padding-bottom: 2rem;
+    }
+
+    .bg_03-gray {
+        background-color: #F1F1F3;
+        padding-bottom: 2rem;
+    }
+
     .bg_02 {
-        height: 12rem;
-        background-image: url(../media/Overview_M1080_04.jpg);
+        height: 42rem;
+        background-image: url(../media/Overview_M1080_05.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         margin: 1rem;
     }
 
     .bg_03 {
-        height: 18rem;
-        background-image: url(../media/Overview_M1080_05.jpg);
+        height: 8.5rem;
+        background-image: url(../media/Overview_M1080_15_01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        max-width: 10rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .limit_01 {
+        margin: 1rem 2rem 1rem 2rem;
+        max-width: 24rem;
+    }
+
+    .bg_04-01 {
+        height: 16rem;
+        background-image: url(../media/Overview_M1080_19.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-    }
-
-    .bg_img-center {
         display: grid;
-        justify-items: center;
+        align-items: start;
+        margin-bottom: 1rem;
     }
 
-    .bg_04 {
-        height: 36rem;
-        background-image: url(../media/Overview_M1080_07.jpg);
+    .bg_04-02 {
+        height: 16rem;
+        background-image: url(../media/Overview_M1080_20.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
+        background-size: contain;
+        display: grid;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .bg_04-03 {
+        height: 16rem;
+        background-image: url(../media/Overview_M1080_21.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: grid;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .bg_04-04 {
+        height: 18rem;
+        background-image: url(../media/Overview_M1080_22.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: grid;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .bg_04-05 {
+        height: 16rem;
+        background-image: url(../media/Overview_M1080_23.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: grid;
+        align-items: start;
     }
 
     .bg_05 {
-        height: 40rem;
-        background-image: url(../media/Overview_M1080_08.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-
-    .bg_06 {
-        height: 36rem;
-        background-image: url(../media/Overview_M1080_09.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-    
-    .bg_07 {
-        height: 77rem;
-        background-image: url(../media/Overview_M1080_11.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-        margin-top: 4rem;
-    }
-
-    .bg_08 {
-        height: 40rem;
-        background-image: url(../media/Overview_M1080_12.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-
-    .bg_09 {
-        height: 40rem;
-        background-image: url(../media/Overview_M1080_13.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-
-    .bg_10 {
-        height: 50rem;
-        background-image: url(../media/Overview_M1080_14.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-
-    .bg_11 {
-        height: 62rem;
-        background-image: url(../media/Overview_M1080_15.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bg_12 {
         height: 20rem;
-        background-image: url(../media/Overview_M1080_16.jpg);
+        background-image: url(../media/Overview_M1080_24.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
